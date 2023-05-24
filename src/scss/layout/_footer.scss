@@ -1,0 +1,14 @@
+footer{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    background: $btnColor;
+    justify-content: center;
+    align-items: center;
+    
+    address{
+        font-size: 20px;
+        @include fontPoppins();
+        color: $baseColor;
+    }
+}

@@ -1,0 +1,53 @@
+.p-bloc-mv{
+    background-color: #bab1b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__bg{
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        position: relative;
+        img{
+            display: block;
+            position: relative;
+        }
+    }
+    &__text{
+        color: white;
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        .icon{
+            width: 44px;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            i{
+                display: flex;
+                align-items: center;
+                font-size: 44px;
+                height: 56px;
+            }
+        }
+        h4{
+            height: 25%;
+            font-size: 35px;
+            font-weight: 200;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include fontLatos();
+        }
+        p{
+            height: 25%;
+            font-size: 16px;
+            @include fontPoppins();
+        }
+    }
+}

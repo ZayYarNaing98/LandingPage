@@ -1,0 +1,64 @@
+.card-bloc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1200px;
+    
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 80%;
+        .c-cardwarp{
+            height: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5% 5%;
+            &__card{
+               width: calc(90%/3);
+                height: 47%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $borderColor;
+                background-color: $baseColor;
+                &__info{
+                    width: 300px;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h4{
+                        @include fontLatos();
+                        font-size: 18px;
+                        margin-top: 15%;
+                        margin-bottom: 15%;
+                    }
+                    p{
+                        @include fontPoppins();
+                        font-size: 16px;
+                        font-weight: 200;
+                        word-break: break-all;
+                    }
+                    .icon{
+                        width: 88px;
+                        height: 88px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 44px;
+                        background-color: $btnColor;
+                        
+                        i{
+                            font-size: 32px;
+                            color: $baseColor;
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+}
+

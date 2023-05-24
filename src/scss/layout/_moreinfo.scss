@@ -1,0 +1,18 @@
+.l-moreinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3000px;
+
+    .info-warp{
+        .c-info:nth-child(2){
+            
+            div#order1{
+                order: 2;
+            }
+            div#order2{
+                order: 1;
+            }
+        }
+    }
+}

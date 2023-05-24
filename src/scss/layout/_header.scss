@@ -1,0 +1,27 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+
+    .l-header{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .l-logo{
+            a{
+                display: block;
+                font-size: 28px;
+                font-weight: bold;
+                @include fontDancingScript();
+                color: $baseColor;
+                transition: 0.5s;
+                &:hover{
+                    color: $hoverColor;
+                }
+            }     
+        }
+    }
+}
